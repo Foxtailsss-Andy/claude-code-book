@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720" fill="none">
+      <rect width="1240" height="720" rx="24" fill="#fbfaf6" />
+      <text x="620" y="50" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">工具治理流水线</text><g>
+      <rect x="70" y="170" width="180" height="100" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="160.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Tool Input</text>
+      <text x="160.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">模型生成参数</text><text x="160.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">schema 校验</text>
+    </g><g>
+      <rect x="300" y="170" width="180" height="100" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="390.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">PreToolUse Hooks</text>
+      <text x="390.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">组织规则先执行</text><text x="390.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">可阻断或追加上下文</text>
+    </g><g>
+      <rect x="530" y="170" width="180" height="100" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="620.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Rules / Classifier</text>
+      <text x="620.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">allow / ask / deny</text><text x="620.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">Bash 风险判定</text>
+    </g><g>
+      <rect x="760" y="170" width="180" height="100" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="850.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Interactive Dialog</text>
+      <text x="850.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">仍不确定时</text><text x="850.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">请求人类批准</text>
+    </g><g>
+      <rect x="990" y="170" width="180" height="100" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="1080.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Tool Execution</text>
+      <text x="1080.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">真正执行工具</text><text x="1080.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">写入结果与状态</text>
+    </g><g>
+      <rect x="400" y="430" width="440" height="120" rx="20" fill="#f2fbf4" stroke="#b4dec0" stroke-width="2" />
+      <text x="620.0" y="464" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">PostToolUse / Failure Hooks</text>
+      <text x="620.0" y="502" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">统一处理成功、失败、附加上下文、审计与后处理</text>
+    </g><g>
+      <rect x="430" y="610" width="380" height="70" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="620.0" y="644" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">回到 QueryEngine / Transcript / UI</text>
+      <text x="620.0" y="682" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">工具结果进入下一轮推理，用户可见且可恢复</text>
+    </g>
+    <g>
+      <line x1="250" y1="220" x2="300" y2="220" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="300,220 290,214 290,226" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="480" y1="220" x2="530" y2="220" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="530,220 520,214 520,226" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="710" y1="220" x2="760" y2="220" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="760,220 750,214 750,226" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="940" y1="220" x2="990" y2="220" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="990,220 980,214 980,226" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="1080" y1="270" x2="1080" y2="430" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="1080,430 1074,420 1086,420" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="620" y1="550" x2="620" y2="610" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="620,610 614,600 626,600" fill="#94a3b8" />
+      
+    </g>
+    </svg>

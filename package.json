@@ -1,0 +1,17 @@
+{
+  "name": "claude-code-book",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/app.ts --bundle --format=esm --target=es2020 --outfile=assets/app.js",
+    "check": "tsc --noEmit",
+    "serve": "python3 -m http.server 5501"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.3",
+    "typescript": "^5.8.3"
+  }
+}

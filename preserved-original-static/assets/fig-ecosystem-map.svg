@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760" fill="none">
+      <rect width="1240" height="760" rx="24" fill="#fbfaf6" />
+      <text x="620" y="52" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">Claude Code 的扩展生态分层</text><g>
+      <rect x="70" y="130" width="240" height="110" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="190.0" y="164" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Memory / CLAUDE.md</text>
+      <text x="190.0" y="202" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">让 Claude 知道什么</text><text x="190.0" y="226" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">项目或个人约定</text>
+    </g><g>
+      <rect x="350" y="130" width="240" height="110" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="470.0" y="164" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Settings / Permissions</text>
+      <text x="470.0" y="202" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">让系统如何运行</text><text x="470.0" y="226" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">规则、env、hooks</text>
+    </g><g>
+      <rect x="630" y="130" width="240" height="110" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="750.0" y="164" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Slash Commands</text>
+      <text x="750.0" y="202" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">用户显式触发的工作流快捷入口</text>
+    </g><g>
+      <rect x="910" y="130" width="240" height="110" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="1030.0" y="164" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Hooks</text>
+      <text x="1030.0" y="202" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">生命周期里的确定性动作</text>
+    </g><g>
+      <rect x="210" y="330" width="300" height="120" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="360.0" y="364" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Claude Code Harness</text>
+      <text x="360.0" y="402" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">QueryEngine · tools · state · compact · session</text>
+    </g><g>
+      <rect x="560" y="330" width="240" height="120" rx="20" fill="#f2fbf4" stroke="#b4dec0" stroke-width="2" />
+      <text x="680.0" y="364" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">MCP</text>
+      <text x="680.0" y="402" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">标准化接入外部工具与数据源</text>
+    </g><g>
+      <rect x="850" y="330" width="240" height="120" rx="20" fill="#f2fbf4" stroke="#b4dec0" stroke-width="2" />
+      <text x="970.0" y="364" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Subagents</text>
+      <text x="970.0" y="402" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">专用角色、上下文隔离、任务委派</text>
+    </g><g>
+      <rect x="230" y="560" width="240" height="110" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="350.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">SDK</text>
+      <text x="350.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">把 harness 嵌入到别的应用</text>
+    </g><g>
+      <rect x="500" y="560" width="240" height="110" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="620.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">GitHub Actions</text>
+      <text x="620.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">把 harness 变成协作/CI 节点</text>
+    </g><g>
+      <rect x="770" y="560" width="240" height="110" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="890.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">IDE / Other Surfaces</text>
+      <text x="890.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">共用底座，改变表层交互</text>
+    </g>
+    <g>
+      <line x1="190" y1="240" x2="190" y2="330" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="190,330 184,320 196,320" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="470" y1="240" x2="470" y2="330" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="470,330 464,320 476,320" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="750" y1="240" x2="750" y2="330" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="750,330 744,320 756,320" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="1030" y1="240" x2="1030" y2="330" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="1030,330 1024,320 1036,320" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="350" y1="450" x2="350" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="350,560 344,550 356,550" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="680" y1="450" x2="680" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="680,560 674,550 686,550" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="970" y1="450" x2="970" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="970,560 964,550 976,550" fill="#94a3b8" />
+      
+    </g>
+    </svg>

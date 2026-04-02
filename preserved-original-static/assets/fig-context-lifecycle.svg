@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700" fill="none">
+      <rect width="1240" height="700" rx="24" fill="#fbfaf6" />
+      <text x="620" y="50" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">上下文与记忆的生命周期</text><g>
+      <rect x="80" y="170" width="240" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="200.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Raw Conversation</text>
+      <text x="200.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">用户消息、工具结果、assistant block</text><text x="200.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">任务细节最丰富</text>
+    </g><g>
+      <rect x="380" y="170" width="240" height="120" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="500.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">System / Memory Layers</text>
+      <text x="500.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">system prompt、CLAUDE.md</text><text x="500.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">settings、MCP instructions</text>
+    </g><g>
+      <rect x="680" y="170" width="240" height="120" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="800.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Compact Trigger</text>
+      <text x="800.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">接近上下文阈值</text><text x="800.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">准备压缩旧消息</text>
+    </g><g>
+      <rect x="980" y="170" width="180" height="120" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="1070.0" y="204" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Compact Prompt</text>
+      <text x="1070.0" y="242" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">结构化摘要协议</text><text x="1070.0" y="266" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">不是随便总结</text>
+    </g><g>
+      <rect x="300" y="460" width="640" height="150" rx="20" fill="#f2fbf4" stroke="#b4dec0" stroke-width="2" />
+      <text x="620.0" y="494" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Continuing Session</text>
+      <text x="620.0" y="532" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">摘要 + 近期消息 + 当前 memory + tool state</text><text x="620.0" y="556" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">让系统继续工作，而不是从零开始</text>
+    </g>
+    <g>
+      <line x1="320" y1="230" x2="380" y2="230" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="380,230 370,224 370,236" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="620" y1="230" x2="680" y2="230" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="680,230 670,224 670,236" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="920" y1="230" x2="980" y2="230" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="980,230 970,224 970,236" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="1070" y1="290" x2="1070" y2="460" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="1070,460 1064,450 1076,450" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="620" y1="460" x2="620" y2="330" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="620,330 610,324 610,336" fill="#94a3b8" />
+      <text x="620.0" y="387.0" font-size="15" font-family="Inter, system-ui, sans-serif" font-weight="600" fill="#6b7280" text-anchor="middle">继续迭代</text>
+    </g>
+    </svg>

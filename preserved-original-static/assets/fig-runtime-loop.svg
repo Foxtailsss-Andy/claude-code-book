@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780" fill="none">
+      <rect width="1240" height="780" rx="24" fill="#fbfaf6" />
+      <text x="620" y="54" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">Claude Code 的运行时闭环</text><g>
+      <rect x="70" y="150" width="210" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="175.0" y="184" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">用户输入</text>
+      <text x="175.0" y="222" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">自然语言 / slash commands</text><text x="175.0" y="246" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">附件 / 选中文本 / issue</text>
+    </g><g>
+      <rect x="340" y="150" width="250" height="120" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="465.0" y="184" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">QueryEngine</text>
+      <text x="465.0" y="222" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">会话状态、messages、usage</text><text x="465.0" y="246" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">本轮 turn 的入口</text>
+    </g><g>
+      <rect x="650" y="150" width="240" height="120" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="770.0" y="184" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">query.ts 主循环</text>
+      <text x="770.0" y="222" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">stream response</text><text x="770.0" y="246" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">发现 tool_use / 触发 compact</text>
+    </g><g>
+      <rect x="950" y="150" width="220" height="120" rx="20" fill="#fff2dc" stroke="#f1c27d" stroke-width="2" />
+      <text x="1060.0" y="184" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Claude API</text>
+      <text x="1060.0" y="222" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">system prompt + tools</text><text x="1060.0" y="246" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">流式返回 block</text>
+    </g><g>
+      <rect x="180" y="430" width="260" height="130" rx="20" fill="#f2fbf4" stroke="#b4dec0" stroke-width="2" />
+      <text x="310.0" y="464" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Tool Orchestration</text>
+      <text x="310.0" y="502" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">并发安全读操作并行</text><text x="310.0" y="526" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">有副作用操作串行</text>
+    </g><g>
+      <rect x="500" y="430" width="260" height="130" rx="20" fill="#fff6e8" stroke="#f0c779" stroke-width="2" />
+      <text x="630.0" y="464" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Permissions / Hooks</text>
+      <text x="630.0" y="502" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">rule / classifier / dialog</text><text x="630.0" y="526" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">Pre/Post ToolUse</text>
+    </g><g>
+      <rect x="820" y="430" width="260" height="130" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="950.0" y="464" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">AppState / UI</text>
+      <text x="950.0" y="502" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">进度可见、通知、恢复</text><text x="950.0" y="526" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">让用户保持控制</text>
+    </g>
+    <g>
+      <line x1="280" y1="210" x2="340" y2="210" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="340,210 330,204 330,216" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="590" y1="210" x2="650" y2="210" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="650,210 640,204 640,216" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="890" y1="210" x2="950" y2="210" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="950,210 940,204 940,216" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="770" y1="270" x2="770" y2="430" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="770,430 764,420 776,420" fill="#94a3b8" />
+      <text x="830" y="342.0" font-size="15" font-family="Inter, system-ui, sans-serif" font-weight="600" fill="#6b7280" text-anchor="start">tool_use → tools</text>
+    </g>
+    <g>
+      <line x1="440" y1="495" x2="500" y2="495" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="500,495 490,489 490,501" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="760" y1="495" x2="820" y2="495" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="820,495 810,489 810,501" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="1080" y1="430" x2="1080" y2="270" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="1080,270 1070,264 1070,276" fill="#94a3b8" />
+      <text x="1080.0" y="342.0" font-size="15" font-family="Inter, system-ui, sans-serif" font-weight="600" fill="#6b7280" text-anchor="middle">result / status</text>
+    </g>
+    <g>
+      <line x1="310" y1="560" x2="310" y2="650" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="310,650 300,644 300,656" fill="#94a3b8" />
+      <text x="310.0" y="597.0" font-size="15" font-family="Inter, system-ui, sans-serif" font-weight="600" fill="#6b7280" text-anchor="middle">tool_result / attachments</text>
+    </g><g>
+      <rect x="190" y="650" width="860" height="80" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="620.0" y="684" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">继续下一轮推理或停止</text>
+      <text x="620.0" y="722" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">没有 tool_use 且 stop hooks 通过则结束；否则带着新上下文继续</text>
+    </g>
+    </svg>

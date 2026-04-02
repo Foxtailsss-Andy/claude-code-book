@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="620" viewBox="0 0 1240 620" fill="none">
+      <rect width="1240" height="620" rx="24" fill="#fbfaf6" />
+      <text x="620" y="52" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">Claude Code 的多入口产品栈</text><g>
+      <rect x="70" y="110" width="220" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="180.0" y="144" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Terminal</text>
+      <text x="180.0" y="182" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">原生开发工作面</text><text x="180.0" y="206" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">最强控制力与 scriptability</text>
+    </g><g>
+      <rect x="330" y="110" width="220" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="440.0" y="144" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">IDE</text>
+      <text x="440.0" y="182" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">更低学习成本</text><text x="440.0" y="206" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">可视化 diff 与侧边栏</text>
+    </g><g>
+      <rect x="590" y="110" width="220" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="700.0" y="144" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">GitHub Actions</text>
+      <text x="700.0" y="182" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">异步协作与 CI</text><text x="700.0" y="206" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">让 Claude 成为流程节点</text>
+    </g><g>
+      <rect x="850" y="110" width="320" height="120" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="1010.0" y="144" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">SDK / MCP / 其他 Surface</text>
+      <text x="1010.0" y="182" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">把 Claude Code 作为底座嵌入别处</text><text x="1010.0" y="206" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">或把外部工具标准化接进来</text>
+    </g><g>
+      <rect x="170" y="320" width="900" height="140" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="620.0" y="354" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Claude Code Agent Harness</text>
+      <text x="620.0" y="392" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">QueryEngine · tools · permissions · hooks · memory · compact · state</text><text x="620.0" y="416" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">多入口共享的核心执行层</text>
+    </g><g>
+      <rect x="380" y="500" width="480" height="80" rx="20" fill="#fff2dc" stroke="#f1c27d" stroke-width="2" />
+      <text x="620.0" y="534" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Claude Models</text>
+      <text x="620.0" y="572" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">Sonnet 4.6 / Opus 4.6 提供更强 coding、agent planning 与长任务包络</text>
+    </g>
+    <g>
+      <line x1="180" y1="230" x2="180" y2="320" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="180,320 174,310 186,310" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="440" y1="230" x2="440" y2="320" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="440,320 434,310 446,310" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="700" y1="230" x2="700" y2="320" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="700,320 694,310 706,310" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="1010" y1="230" x2="1010" y2="320" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="1010,320 1004,310 1016,310" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="620" y1="460" x2="620" y2="500" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="620,500 614,490 626,490" fill="#94a3b8" />
+      
+    </g>
+    </svg>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>《Claude Code：面向产品经理的深度拆解与产品白盒》</title>
+  <meta name="description" content="基于 cc2.1.88 源码快照 + Anthropic 官方资料（更新至 2026-03-31）的学习型书稿" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="index-page">
+  <div class="progress" id="progress"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>《Claude Code：面向产品经理的深度拆解与产品白盒》</strong>
+          <small>基于 cc2.1.88 源码快照 + Anthropic 官方资料（更新至 2026-03-31）的学习型书稿</small>
+        </span>
+      </a>
+      <nav class="topnav">
+        <a href="index.html" aria-current="page">封面</a>
+        <a href="book.html">在线阅读</a>
+        <a href="preserved-original-static/index.html">原版快照</a>
+        <a href="manuscript.md">Markdown 书稿</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cover">
+    <section class="cover-hero reveal" data-reveal>
+      <div class="cover-hero-grid">
+        <div>
+          <div class="eyebrow">在线书籍 · 内容优先 · 可打印</div>
+          <h1>《Claude Code：面向产品经理的深度拆解与产品白盒》</h1>
+          <p class="cover-sub">基于 cc2.1.88 源码快照 + Anthropic 官方资料（更新至 2026-03-31）的学习型书稿</p>
+          <p class="cover-lead">这不是一份“介绍 Claude Code 有什么功能”的浅层手册，而是一份面向产品经理的白盒学习书。它试图同时回答三个问题。</p>
+          <p class="hero-bridge">你可以把它当作“产品分析 + 架构手册 + 设计启发录”的合体版本。</p>
+          <div class="cover-actions">
+            <a class="button primary" href="book.html">进入在线阅读</a>
+            <a class="button secondary" href="manuscript.md">下载 Markdown 书稿</a>
+            <a class="button ghost" href="preserved-original-static/index.html">查看保留原版</a>
+          </div>
+          <div class="meta-row">
+            <span class="badge">16 章正文</span>
+            <span class="badge">4 个附录</span>
+            <span class="badge">PM / 技术负责人 / Agent 产品设计者</span>
+          </div>
+        </div>
+        <aside class="cover-summary">
+          <h2>这本书的核心问题</h2>
+          <ol class="question-list">
+            <li>Claude Code 作为产品，为什么成立？</li><li>Claude Code 作为运行时，为什么看起来比普通 CLI agent 更成熟？</li><li>Claude Code 作为源码系统，哪些地方值得 PM 直接学习与借鉴？</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cover-grid reveal" data-reveal>
+      <article class="panel">
+        <h2>适合谁读</h2>
+        <ul>
+          <li>想系统理解 Claude Code 的产品经理</li>
+          <li>负责 AI / Agent / 开发工具产品的人</li>
+          <li>需要把 Claude Code 引入团队流程的人</li>
+          <li>希望从源码中提炼产品方法的人</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h2>如何阅读更高效</h2>
+        <ul>
+          <li>先建立全局心智：第 1 到第 5 章</li>
+          <li>再看运行时骨架：第 6 到第 12 章</li>
+          <li>最后看平台与落地：第 13 到第 16 章</li>
+          <li>需要回查术语时，再看附录</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h2>你会得到什么</h2>
+        <ul>
+          <li>Claude Code 的产品定位与系统心智模型</li>
+          <li>QueryEngine、工具循环、治理与记忆机制的白盒理解</li>
+          <li>从源码到组织采用的完整阅读路径</li>
+          <li>可以直接借鉴的 AI 产品设计原则</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="catalog reveal" data-reveal>
+      <div class="section-head">
+        <h2>章节目录</h2>
+        <p>按顺序读最完整；按产品、运行时、治理、采用四条线跳读也成立。</p>
+      </div>
+      <div class="catalog-grid">
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-01">
+          <span class="catalog-index">第 1 章</span>
+          <h3>一句话看懂 Claude Code</h3>
+          <p>先把 Claude Code 放在正确的层级上理解：它不是“一个命令行聊天框”，而是一个面向软件工作的 agent 运行底座（agent harness）产品。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-02">
+          <span class="catalog-index">第 2 章</span>
+          <h3>2026 的产品位置：Claude Code 不是孤立工具，而是多入口执行面</h3>
+          <p>结合 2025–2026 的官方资料，理解 Claude Code 在 Anthropic 产品体系中的位置变化。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-03">
+          <span class="catalog-index">第 3 章</span>
+          <h3>面向产品经理的 Claude Code 心智模型</h3>
+          <p>用 PM 熟悉的产品语言，重写 Claude Code 的技术结构。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-04">
+          <span class="catalog-index">第 4 章</span>
+          <h3>核心用户旅程：Claude Code 在真实开发工作里怎么被使用</h3>
+          <p>从用户任务而不是从源码文件出发，理解 Claude Code 的产品价值链。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-05">
+          <span class="catalog-index">第 5 章</span>
+          <h3>为什么 Claude Code 体验会更好：六个产品级原因</h3>
+          <p>把“感觉它特别能干”拆成可复用的产品与工程原因。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-06">
+          <span class="catalog-index">第 6 章</span>
+          <h3>先读懂这份源码快照：它是什么，不是什么</h3>
+          <p>在白盒分析前先建立证据边界，避免对源码快照过度解读。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-07">
+          <span class="catalog-index">第 7 章</span>
+          <h3>启动链路：Claude Code 是怎样被拉起来的</h3>
+          <p>从入口和模式切换看，为什么 Claude Code 不像一个普通 CLI。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-08">
+          <span class="catalog-index">第 8 章</span>
+          <h3>QueryEngine 与主循环：Claude Code 的心脏</h3>
+          <p>这一章是全书最关键的技术章节：看懂 Claude Code 怎么在一轮又一轮里持续推进任务。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-09">
+          <span class="catalog-index">第 9 章</span>
+          <h3>工具系统：Claude Code 如何决定、调用并编排工具</h3>
+          <p>从工具抽象、并发规则、延迟加载和专用工具优先原则，解释 Claude Code 的“行动力”。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-10">
+          <span class="catalog-index">第 10 章</span>
+          <h3>权限、安全与治理：为什么它敢自动化，但又没有完全失控</h3>
+          <p>这是产品落地团队环境的关键章节：看懂 permission modes、hooks、classifier 和 managed settings。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-11">
+          <span class="catalog-index">第 11 章</span>
+          <h3>Prompt 栈：Claude Code 的提示词不是一句话，而是一整层系统</h3>
+          <p>把系统 prompt、工具 prompt、任务 prompt、compact prompt、memory 和 settings 串成一个完整栈。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-12">
+          <span class="catalog-index">第 12 章</span>
+          <h3>上下文、记忆与 compact：为什么长任务还能继续工作</h3>
+          <p>理解 Claude Code 如何管理长会话：动态边界、tool pool 稳定性、memory 层级与 compact 协议。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-13">
+          <span class="catalog-index">第 13 章</span>
+          <h3>状态、UI、恢复、远程与多代理：为什么它像一个终端应用，而不是 shell 包装</h3>
+          <p>从 AppState、React/Ink、后台任务（background tasks）、resume/rewind、remote 与 subagents 看它的产品化程度。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-14">
+          <span class="catalog-index">第 14 章</span>
+          <h3>扩展层：CLAUDE.md、slash commands、hooks、MCP、subagents、SDK 与 GitHub Actions</h3>
+          <p>这是 Claude Code 平台化能力最强的一章：看懂各类扩展面如何分工。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-15">
+          <span class="catalog-index">第 15 章</span>
+          <h3>Claude Code 与其他 CLI agent 的真正差异，以及它的限制在哪里</h3>
+          <p>这一章既讲竞争点，也讲边界、代价与不能神化的地方。</p>
+        </a>
+        <a class="catalog-entry reveal" data-reveal href="book.html#chapter-16">
+          <span class="catalog-index">第 16 章</span>
+          <h3>给产品经理的最终章：如何采用 Claude Code，以及你能从它学到什么</h3>
+          <p>把前面的全部拆解收束成 PM 可落地的方法论、组织策略与学习路径。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="cover-visuals reveal" data-reveal>
+      <div class="section-head">
+        <h2>书中图示预览</h2>
+        <p>正文中的图示负责建立结构感，不只是点缀视觉。</p>
+      </div>
+      <div class="visual-grid">
+        <img src="assets/fig-product-stack.svg" alt="产品栈图" />
+        <img src="assets/fig-runtime-loop.svg" alt="运行时循环图" />
+        <img src="assets/fig-governance-pipeline.svg" alt="治理流水线图" />
+      </div>
+    </section>
+
+    <section class="cover-footer-note reveal" data-reveal>
+      <p>说明：书中“产品现状”以 Anthropic 官方公开资料为准；“内部实现”以你提供的 cc2.1.88 源码快照为证据来源；两者在正文中融合解释，但不会混为一谈。</p>
+    </section>
+  </main>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720" fill="none">
+      <rect width="1240" height="720" rx="24" fill="#fbfaf6" />
+      <text x="620" y="52" font-size="28" font-family="Inter, system-ui, sans-serif" font-weight="800" fill="#182031" text-anchor="middle">启动链路与运行态分流</text><g>
+      <rect x="470" y="100" width="300" height="90" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="620.0" y="134" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">entrypoints/cli.tsx</text>
+      <text x="620.0" y="172" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">最早期分流 / fast path / feature gate</text>
+    </g><g>
+      <rect x="470" y="250" width="300" height="90" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="620.0" y="284" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">main.tsx</text>
+      <text x="620.0" y="322" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">CLI 参数、模式选择、system prompt 组装入口</text>
+    </g><g>
+      <rect x="470" y="400" width="300" height="90" rx="20" fill="#eef4ff" stroke="#bfd0ff" stroke-width="2" />
+      <text x="620.0" y="434" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">setup.ts</text>
+      <text x="620.0" y="472" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">hooks、commands、agents、cwd、工作环境装配</text>
+    </g><g>
+      <rect x="60" y="560" width="220" height="100" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="170.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">REPL</text>
+      <text x="170.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">交互式主界面</text>
+    </g><g>
+      <rect x="320" y="560" width="220" height="100" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="430.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Print / Headless</text>
+      <text x="430.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">管道、CI、SDK 调用</text>
+    </g><g>
+      <rect x="580" y="560" width="220" height="100" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="690.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">Remote / Bridge</text>
+      <text x="690.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">远程会话与多 surface</text>
+    </g><g>
+      <rect x="840" y="560" width="220" height="100" rx="20" fill="#fffdf7" stroke="#d7dbe6" stroke-width="2" />
+      <text x="950.0" y="594" font-size="20" font-family="Inter, system-ui, sans-serif" font-weight="700" fill="#101828" text-anchor="middle">MCP / SSH / Helper</text>
+      <text x="950.0" y="632" font-size="16" font-family="Inter, system-ui, sans-serif" fill="#42526b" text-anchor="middle">特殊模式与子命令</text>
+    </g>
+    <g>
+      <line x1="620" y1="190" x2="620" y2="250" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="620,250 614,240 626,240" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="620" y1="340" x2="620" y2="400" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="620,400 614,390 626,390" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="170" y1="490" x2="170" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="170,560 164,550 176,550" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="430" y1="490" x2="430" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="430,560 424,550 436,550" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="690" y1="490" x2="690" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="690,560 684,550 696,550" fill="#94a3b8" />
+      
+    </g>
+    <g>
+      <line x1="950" y1="490" x2="950" y2="560" stroke="#94a3b8" stroke-width="3" />
+      <polygon points="950,560 944,550 956,550" fill="#94a3b8" />
+      
+    </g>
+    </svg>
