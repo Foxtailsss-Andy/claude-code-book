@@ -353,8 +353,8 @@ button {
 .hero-book h1,
 .cover-hero h1 {
   margin: 12px 0 10px;
-  font-size: clamp(2.7rem, 5vw, 4.4rem);
-  line-height: 1.04;
+  font-size: clamp(2.2rem, 4.1vw, 3.5rem);
+  line-height: 1.08;
   letter-spacing: -0.025em;
 }
 
@@ -956,7 +956,7 @@ body.js-ready .reveal.is-visible {
 
   .hero-book h1,
   .cover-hero h1 {
-    font-size: 2.45rem;
+    font-size: 2.1rem;
   }
 
   .chapter {

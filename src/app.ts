@@ -6,7 +6,8 @@ import {
   type LayoutLinesResult,
   type PreparedTextWithSegments,
 } from '@chenglou/pretext'
-import { shouldUsePretextLayout, type PretextMode } from './pretext-heuristics'
+
+type PretextMode = 'poster' | 'chapter' | 'catalog' | 'summary' | 'aside'
 
 type PretextConfig = {
   mode: PretextMode
@@ -334,21 +335,6 @@ function createVisuallyHiddenText(text: string): HTMLSpanElement {
   return sr
 }
 
-function restoreNativeText(element: HTMLElement, text: string): void {
-  element.replaceChildren(document.createTextNode(text))
-  element.classList.remove(
-    'pretext-ready',
-    'pretext-mode-poster',
-    'pretext-mode-chapter',
-    'pretext-mode-catalog',
-    'pretext-mode-summary',
-    'pretext-mode-aside'
-  )
-  delete element.dataset.pretextRendered
-  delete element.dataset.pretextLastWidth
-  delete element.dataset.pretextLastFont
-}
-
 function renderPretextBlock(element: HTMLElement): void {
   const text = getPretextText(element)
   if (text.length === 0) return
@@ -367,10 +353,6 @@ function renderPretextBlock(element: HTMLElement): void {
 
   const prepared = getPrepared(text, font)
   const config = getConfig(element)
-  if (!shouldUsePretextLayout(config.mode, text)) {
-    restoreNativeText(element, text)
-    return
-  }
   const renderLineHeight = lineHeight + config.lineGap
   const chosen = chooseLayout(prepared, maxWidth, renderLineHeight, config)
   const lineMetrics = chosen.lines.map((line, index) => {

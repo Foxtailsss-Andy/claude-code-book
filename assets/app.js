@@ -2262,21 +2262,6 @@ function setLocale(locale) {
   clearCache();
 }
 
-// src/pretext-heuristics.ts
-var CJK_CHAR_RE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u;
-function isCjkHeavyText(text) {
-  const visibleChars = Array.from(text).filter((char) => /\S/u.test(char));
-  if (visibleChars.length === 0) return false;
-  const cjkChars = visibleChars.filter((char) => CJK_CHAR_RE.test(char)).length;
-  return cjkChars / visibleChars.length >= 0.35;
-}
-function shouldUsePretextLayout(mode, text) {
-  if (mode === "poster" && isCjkHeavyText(text)) {
-    return false;
-  }
-  return true;
-}
-
 // src/app.ts
 var body = document.body;
 var root = document.documentElement;
@@ -2540,20 +2525,6 @@ function createVisuallyHiddenText(text) {
   sr.textContent = text;
   return sr;
 }
-function restoreNativeText(element, text) {
-  element.replaceChildren(document.createTextNode(text));
-  element.classList.remove(
-    "pretext-ready",
-    "pretext-mode-poster",
-    "pretext-mode-chapter",
-    "pretext-mode-catalog",
-    "pretext-mode-summary",
-    "pretext-mode-aside"
-  );
-  delete element.dataset.pretextRendered;
-  delete element.dataset.pretextLastWidth;
-  delete element.dataset.pretextLastFont;
-}
 function renderPretextBlock(element) {
   const text = getPretextText(element);
   if (text.length === 0) return;
@@ -2569,10 +2540,6 @@ function renderPretextBlock(element) {
   }
   const prepared = getPrepared(text, font);
   const config = getConfig(element);
-  if (!shouldUsePretextLayout(config.mode, text)) {
-    restoreNativeText(element, text);
-    return;
-  }
   const renderLineHeight = lineHeight + config.lineGap;
   const chosen = chooseLayout(prepared, maxWidth, renderLineHeight, config);
   const lineMetrics = chosen.lines.map((line, index) => {
