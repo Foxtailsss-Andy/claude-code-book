@@ -6,6 +6,7 @@ import {
   type LayoutLinesResult,
   type PreparedTextWithSegments,
 } from '@chenglou/pretext'
+import { PRETEXT_SELECTOR } from './pretext-targets'
 
 type PretextMode = 'poster' | 'chapter' | 'catalog' | 'summary' | 'aside'
 
@@ -29,20 +30,6 @@ body.classList.add('js-ready')
 
 const progress = document.getElementById('progress')
 const pretextCache = new Map<string, PreparedTextWithSegments>()
-const PRETEXT_SELECTOR = [
-  '.cover-hero h1',
-  '.cover-lead',
-  '.hero-bridge',
-  '.cover-summary h2',
-  '.catalog-entry h3',
-  '.catalog-entry p',
-  '.hero-book h1',
-  '.hero-aside h2',
-  '.lead',
-  '.reading-paths h2',
-  '.chapter-head h2',
-  '.chapter-head .chapter-summary',
-].join(', ')
 
 function updateProgress(): void {
   const scrollTop = root.scrollTop || document.body.scrollTop

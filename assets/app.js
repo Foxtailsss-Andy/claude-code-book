@@ -2262,26 +2262,22 @@ function setLocale(locale) {
   clearCache();
 }
 
+// src/pretext-targets.ts
+var PRETEXT_SELECTOR_LIST = [
+  ".catalog-entry h3",
+  ".catalog-entry p",
+  ".reading-paths h2",
+  ".chapter-head h2",
+  ".chapter-head .chapter-summary"
+];
+var PRETEXT_SELECTOR = PRETEXT_SELECTOR_LIST.join(", ");
+
 // src/app.ts
 var body = document.body;
 var root = document.documentElement;
 body.classList.add("js-ready");
 var progress = document.getElementById("progress");
 var pretextCache = /* @__PURE__ */ new Map();
-var PRETEXT_SELECTOR = [
-  ".cover-hero h1",
-  ".cover-lead",
-  ".hero-bridge",
-  ".cover-summary h2",
-  ".catalog-entry h3",
-  ".catalog-entry p",
-  ".hero-book h1",
-  ".hero-aside h2",
-  ".lead",
-  ".reading-paths h2",
-  ".chapter-head h2",
-  ".chapter-head .chapter-summary"
-].join(", ");
 function updateProgress() {
   const scrollTop = root.scrollTop || document.body.scrollTop;
   const scrollHeight = root.scrollHeight - root.clientHeight;

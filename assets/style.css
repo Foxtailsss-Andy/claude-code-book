@@ -339,15 +339,16 @@ button {
   overflow: hidden;
 }
 
-.hero-book {
-  padding: 40px 42px;
+.hero-book,
+.cover-hero {
+  padding: 44px 48px;
 }
 
 .hero-book-grid,
 .cover-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.92fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1.62fr) minmax(280px, 0.78fr);
+  gap: 34px;
 }
 
 .hero-book h1,
@@ -951,7 +952,7 @@ body.js-ready .reveal.is-visible {
 
   .hero-book,
   .cover-hero {
-    padding: 24px 22px;
+    padding: 26px 24px;
   }
 
   .hero-book h1,
